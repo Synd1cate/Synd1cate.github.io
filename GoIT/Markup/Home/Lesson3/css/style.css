@@ -10,9 +10,9 @@ body {
     width: 1060px;
     margin: 0 auto;
     padding: 46px;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
 }
 .main {
     margin-top: 40px;
@@ -23,6 +23,15 @@ body {
     background: #575656;
     font-family: 'Open Sans', arial, verdana, sans-serif;
     font-size: 14px;
+    background: #2c2c2c;
+    background: #4c4c4c;
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #4c4c4c), color-stop(6%, #474747), color-stop(20%, #595959), color-stop(32%, #666666), color-stop(46%, #5c5c5c), color-stop(54%, #5c5c5c), color-stop(59%, #5c5c5c), color-stop(66%, #5c5c5c), color-stop(69%, #5c5c5c), color-stop(99%, #2b2b2b), color-stop(100%, #2b2b2b));
+    background: -webkit-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
+    background: -o-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
+    background: -ms-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
+    background: linear-gradient(to bottom, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#2b2b2b', GradientType=0 );
 }
 .nav_menu li {
     display: inline-block;
@@ -33,17 +42,18 @@ body {
     display: block;
     text-decoration: none;
     padding: 15px 45px 15px 45px;
-    border-left: 1px solid #575656;
-    border-right: 1px solid #575656;
 }
 .nav_menu a:hover {
+    color: white;
     background: #393939;
+    padding: 15px 44px 15px 44px;
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
 }
-.nav_menu li a:focus {
+.nav_menu .active {
     color: white;
     background: #393939;
+    padding: 15px 44px 15px 44px;
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
 }
@@ -107,7 +117,6 @@ body {
 .image {
     border: 1px solid #c8c8c8;
     height: 398px;
-    /*background: yellow;*/
     text-align: center;
     margin-bottom: 40px;
 }
@@ -115,7 +124,7 @@ body {
      margin-left: 334px;
      font-family: 'Open Sans', arial, verdana, sans-serif;
 }
-p {
+.content p {
     margin: 0 10px 0 25px;
     line-height: 1.5em;
     font-size: 13px;
@@ -126,10 +135,10 @@ p {
     background: #e1e1e1;
     overflow: hidden;
 }
-span {
+.footer span {
     font-family: 'Open Sans', arial, verdana, sans-serif;
     float: right;
-    line-height: 39px;
+    line-height: 44px;
     margin-right: 20px;
     font-size: 14px;
 }
@@ -152,7 +161,6 @@ span {
 .nav_menu_footer a:hover {
     text-decoration: underline;
 }
-.nav_menu_footer li > a span {
-    display: block;
-    background: red;
+.nav_menu_footer .active {
+    text-decoration: underline;
 }
