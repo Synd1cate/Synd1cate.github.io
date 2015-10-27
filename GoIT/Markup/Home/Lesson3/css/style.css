@@ -1,0 +1,153 @@
+@import "reset.css";
+body {
+    background: #f9f9f9;
+}
+.header > a {
+    display: block;
+    margin-bottom: 40px;
+}
+.wrapper {
+    background: white;
+    width: 1060px;
+    margin: 0 auto;
+    padding: 46px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* навигационное меню */
+.nav_menu {
+    background: #575656;
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    font-size: 14px;
+}
+.nav_menu li {
+    display: inline-block;
+    text-align: center;
+}
+.nav_menu a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 15px 45px 15px 45px;
+    border-left: 1px solid #575656;
+    border-right: 1px solid #575656;
+}
+.nav_menu a:hover {
+    background: #393939;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+/* Конец навигационного меню*/
+
+.sidebar {
+    float: left;
+}
+
+/* Меню аккордион */
+.menu_accordion {
+    list-style: none; /* Отменяет маркеры для списка */
+}
+.menu_accordion {
+    border-bottom: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+}
+.menu_accordion li{
+    border-top: 1px solid #c8c8c8;
+}
+/* Меню аккордион */  /* Функция скрытия подменю */
+.menu_accordion li > .sub_menu {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height.4s ease-in-out; /* создает своеобразную анимашку при раскрывании подменю */
+    -moz-transition: height.4s ease-in-out; /* создает своеобразную анимашку при раскрывании подменю */
+    -ms-transition: height.4s ease-in-out; /* создает своеобразную анимашку при раскрывании подменю */
+    -o-transition: height.4s ease-in-out; /* создает своеобразную анимашку при раскрывании подменю */
+    transition: height.4s ease-in-out; /* создает своеобразную анимашку при раскрывании подменю */
+}
+.menu_accordion li:target > .sub_menu {
+    height: 79px; /* можно задать значение auto, но тогда не будет работать анимация */
+}
+.menu_accordion li > a {
+    display: block;
+    width: 205px; /* Ширина блока меню*/
+    height: 39px; /* Высота пункта меню*/
+    color: #656363; /* задаем цвет текста меню */
+    text-decoration: none; /* убираем нижнее подчеркивание ссылок в меню */
+    background: white; /* Цвет фона меню */
+    padding: 0 10px 0 23px; /* Задаем внутренние отступы для текста пунктов меню: 0-верх/низ, 10/23-лево/право */
+    line-height: 39px; /* Выравниваем текст пункта меню посерединке воображаемой кнопки */
+    font-size: 14px; /* задаем размер шрифта для пунктов меню */
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+}
+/* стили поведения поунктов меню при наведении курсора и клике по ним */
+.menu_accordion li:hover > a,
+.menu_accordion li:target > a {
+    color: #2c2c2c;
+}
+
+/* Стили для подменю */
+.sub_menu li a {
+    color: #2c2c2c;
+    background: white;
+    margin-left: 15px;
+}
+/* конец меню акардион */
+.image {
+    border: 1px solid #c8c8c8;
+    height: 398px;
+    /*background: yellow;*/
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content {
+     margin-left: 334px;
+     font-family: 'Open Sans', arial, verdana, sans-serif;
+}
+p {
+    margin: 0 10px 0 25px;
+    line-height: 1.5em;
+    font-size: 13px;
+
+}
+.footer {
+    width: 100%;
+    background: #e1e1e1;
+    overflow: hidden;
+}
+span {
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    float: right;
+    line-height: 39px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.nav_menu_footer {
+    float: left;
+    font-family: 'Open Sans', arial, verdana, sans-serif;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+.nav_menu_footer li{
+    display: inline-block;
+    text-align: center;
+}
+.nav_menu_footer a {
+    color: #2c2c2c;
+    display: block;
+    text-decoration: none;
+    padding: 15px 45px 15px 45px;
+}
+.nav_menu_footer a:hover {
+    text-decoration: underline;
+}
+.nav_menu_footer li > a span {
+    display: block;
+    background: red;
+}
