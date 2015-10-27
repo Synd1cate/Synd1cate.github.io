@@ -1,4 +1,3 @@
-@import "reset.css";
 body {
     background: #f9f9f9;
 }
@@ -38,6 +37,12 @@ body {
     border-right: 1px solid #575656;
 }
 .nav_menu a:hover {
+    background: #393939;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+.nav_menu li a:focus {
+    color: white;
     background: #393939;
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
