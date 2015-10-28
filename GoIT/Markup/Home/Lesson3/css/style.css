@@ -22,37 +22,40 @@ body {
 .nav_menu {
     background: #575656;
     font-family: 'Open Sans', arial, verdana, sans-serif;
-    font-size: 14px;
-    background: #4c4c4c;
-    background: -moz-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #4c4c4c), color-stop(6%, #474747), color-stop(20%, #595959), color-stop(32%, #666666), color-stop(46%, #5c5c5c), color-stop(54%, #5c5c5c), color-stop(59%, #5c5c5c), color-stop(66%, #5c5c5c), color-stop(69%, #5c5c5c), color-stop(99%, #2b2b2b), color-stop(100%, #2b2b2b));
-    background: -webkit-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
-    background: -o-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
-    background: -ms-linear-gradient(top, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
-    background: linear-gradient(to bottom, #4c4c4c 0%, #474747 6%, #595959 20%, #666666 32%, #5c5c5c 46%, #5c5c5c 54%, #5c5c5c 59%, #5c5c5c 66%, #5c5c5c 69%, #2b2b2b 99%, #2b2b2b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#2b2b2b', GradientType=0 );
+    font-size: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
 }
 .nav_menu li {
     display: inline-block;
     text-align: center;
 }
 .nav_menu li a {
+    font-size: 14px;
     color: white;
     display: block;
     text-decoration: none;
     padding: 15px 45px 15px 45px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 1px black;
 }
 .nav_menu a:hover {
     color: white;
-    background: #393939;
+    background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
     padding: 15px 44px 15px 44px;
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
 }
 .nav_menu .active {
     color: white;
-    background: #393939;
+    background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -o-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
     padding: 15px 44px 15px 44px;
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
@@ -66,6 +69,7 @@ body {
 
 /* Меню аккордион */
 .menu_accordion {
+    width: 236px; /* Ширина блока меню*/
     border-bottom: 1px solid #c8c8c8; /* Рисую рамку вокруг левого основного меню */
     border-left: 1px solid #c8c8c8; /* Рисую рамку вокруг левого основного меню */
     border-right: 1px solid #c8c8c8; /* Рисую рамку вокруг левого основного меню */
@@ -75,7 +79,8 @@ body {
 }
 .menu_accordion li a {
     display: block;
-    width: 205px; /* Ширина блока меню*/
+    box-sizing: border-box;
+    width: 100%;
     height: 39px; /* Высота пункта меню*/
     color: #656363; /* задаем цвет текста меню */
     text-decoration: none; /* убираем нижнее подчеркивание ссылок в меню */
@@ -86,17 +91,15 @@ body {
     font-family: 'Open Sans', arial, verdana, sans-serif;
 }
 /* стили поведения поунктов меню при наведении курсора и клике по ним */
-.menu_accordion li:hover > a,
-.menu_accordion li:target > a {
-    color: #2d2d2d;
-}
-/* Стили для подменю */
-.sub_menu li a {
-    padding-left: 35px;
-}
-.sub_menu .active {
+.menu_accordion .active {
     background: #f9f9f9;
+    padding-left: 35px;
     color: #2c2c2c;
+}
+.menu_accordion a:hover {
+    color: #2c2c2c;
+    background: #f9f9f9;
+    padding-left: 35px;
 }
 /* конец меню акардион */
 .image {
