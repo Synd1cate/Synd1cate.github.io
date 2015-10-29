@@ -13,6 +13,7 @@ body {
     -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.75);
+    box-sizing: border-box;
 }
 .main {
     margin-top: 40px;
@@ -40,16 +41,7 @@ body {
     padding: 15px 45px 15px 45px;
     text-shadow: 1px 1px 1px black;
 }
-.nav_menu a:hover {
-    color: white;
-    background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
-    background-image: -o-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
-    padding: 15px 44px 15px 44px;
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-}
+.nav_menu a:hover,
 .nav_menu .active {
     color: white;
     background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
@@ -100,6 +92,7 @@ body {
     color: #2c2c2c;
     background: #f9f9f9;
     padding-left: 35px;
+
 }
 /* конец меню акардион */
 .image {
@@ -109,7 +102,7 @@ body {
     margin-bottom: 40px;
 }
 .content {
-     margin-left: 334px;
+     margin-left: 288px;
      font-family: 'Open Sans', arial, verdana, sans-serif;
 }
 .content p {
@@ -146,9 +139,7 @@ body {
     text-decoration: none;
     padding: 15px 45px 15px 45px;
 }
-.nav_menu_footer a:hover {
-    text-decoration: underline;
-}
+.nav_menu_footer a:hover,
 .nav_menu_footer .active {
     text-decoration: underline;
 }
