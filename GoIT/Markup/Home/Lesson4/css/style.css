@@ -19,6 +19,14 @@ body {
     width: 325px;
     float: left;
 }
+.logo p {
+    position: absolute;
+    left: 550px;
+    top: 147px;
+    font-size: 12px;
+    font-family: "Tahoma";
+    color: #128aa7;
+}
 .contacts {
     line-height: 18px;
     margin-left: 490px;
@@ -69,6 +77,8 @@ body {
     background-repeat: repeat-x;
     border-bottom: 1px solid black;
     text-align: justify;
+    position: relative;
+    z-index: 1;
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
     -o-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
@@ -89,14 +99,22 @@ body {
     background-image: url(../img/bg_menu.png);
 	background-repeat: repeat-x;
 	text-decoration:none;
+    position: relative;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
+}
+.main_menu .triangle a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 5px;
+    height: 6px;
+    display: block;
+    background:
+    url(../img/triangle.png);
 }
 .main_menu li a:hover{
 	color: white;
-}
-.main_menu .active {
-    color: red;
-    left:0;
 }
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 .main_menu ul{
