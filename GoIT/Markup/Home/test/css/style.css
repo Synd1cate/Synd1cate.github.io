@@ -1,0 +1,225 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-color: #0c739f;
+}
+.wrapper {
+    padding-top: 38px;
+    background: white;
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
+    -o-box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
+}
+.logo {
+    margin-left: 28px;
+    margin-top: 11px;
+    font-size: 0;
+    width: 325px;
+    float: left;
+}
+.logo p {
+    position: absolute;
+    left: 550px;
+    top: 147px;
+    font-size: 12px;
+    font-family: "Tahoma";
+    color: #128aa7;
+}
+.contacts {
+    line-height: 18px;
+    margin-left: 490px;
+    margin-top: 11px;
+    width: 157px;
+    float: right;
+    font-size: 12px;
+    font-family: "Tahoma";
+    color: #128aa7;
+}
+.countries {
+    margin-top: 30px;
+    float: right;
+    font-size: 10px;
+    font-family: "Tahoma";
+    padding-right: 33px;
+}
+.countries a {
+ display: block;
+ float: left;
+ height: 42px;
+ width: 58px;
+ text-align: center;
+ color: #128aa7;
+ font-family: "Tahoma";
+}
+
+.image {
+    clear: both;
+    font-size: 0;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* Начало главного левого горизонтального меню */
+.main_menu {
+	float:left;
+	width:100%;
+    padding-left: 55px;
+    box-sizing: border-box;
+	list-style:none;
+    background: #343434; /* цвет фона, на случай если не подгрузится картинка */
+    background-image: url(../img/bg_menu.png);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid black;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    -o-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+.main_menu li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	display:block;
+}
+.main_menu li a{
+	display:block;
+	padding: 6px 45px 8px 10px;
+	color: white;
+    font-size: 14px;
+    font-family: "Tahoma";
+    background-image: url(../img/bg_menu.png);
+	background-repeat: repeat-x;
+	text-decoration:none;
+    position: relative;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
+}
+.main_menu .triangle a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 5px;
+    height: 6px;
+    display: block;
+    background:
+    url(../img/triangle.png);
+}
+.main_menu li a:hover{
+	color: white;
+}
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.main_menu ul{
+	list-style:none;
+	position:absolute;
+    margin-top: 1px;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	transition: 0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+    -webkit-transition: 0.25s linear opacity;
+    -moz-transition: 0.25s linear opacity;
+    -o-transition: 0.25s linear opacity;
+}
+.main_menu ul li{
+	float:none;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    -o-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+.main_menu ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+    background: #303030;
+}
+.main_menu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+.main_menu li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+    transition: transform 0.1s linear;
+	-webkit-transition: transform 0.1s linear;
+    -moz-transition: transform 0.1s linear;
+    -o-transition: transform 0.1s linear;
+}
+.main_menu li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	background:rgba(51,51,51,0.85); /* Будет полупрозрачным */
+    transform:scale(1.03);
+	-moz-transform:scale(1.03);
+	-webkit-transform:scale(1.03);
+    -o-transform:scale(1.03);
+}
+
+/* Конец главного левого горизонтального меню */
+
+.information {
+    float: left;
+    text-align: center;
+    width: 210px;
+    height: 546px;
+    color: #424c43;
+    box-sizing: border-box;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+    background: #edeef0;
+}
+.information span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: "Tahoma";
+}
+.information p {
+    font-size: 14px;
+    font-family: "Tahoma";
+    line-height: 1.714em;
+}
+
+.content {
+    float: left;
+    width: 580px;
+}
+.news {
+    float: right;
+    text-align: center;
+    width: 210px;
+    height: 546px;
+    color: #424c43;
+    box-sizing: border-box;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+    background: #edeef0;
+}
+.news span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: "Tahoma";
+
+}
+.news p {
+    font-size: 14px;
+    font-family: "Tahoma";
+    line-height: 1.714;
+}
+
+.footer span {
+    clear: both;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-family: "Tahoma";
+    color: white;
+}
