@@ -69,7 +69,7 @@ body {
 .main_menu {
 	float:left;
 	width:100%;
-    padding-left: 55px;
+    padding-left: 56px;
     box-sizing: border-box;
 	list-style:none;
     background: #343434; /* цвет фона, на случай если не подгрузится картинка */
@@ -86,13 +86,12 @@ body {
 }
 .main_menu li{
 	float:left;
-	margin-right:10px;
 	position:relative;
 	display:block;
 }
 .main_menu li a{
 	display:block;
-	padding: 6px 45px 8px 10px;
+	margin: 6px 59px 8px 10px;
 	color: white;
     font-size: 14px;
     font-family: "Tahoma";
@@ -102,17 +101,21 @@ body {
     position: relative;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
 }
-.main_menu .triangle a:after {
+.main_menu .triangle > a:after {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: -10px;
     content: "";
     width: 5px;
     height: 6px;
     display: block;
-    background:
-    url(../img/triangle.png);
+    background: url(../img/triangle.png);
 }
+.main_menu .triangle ul a {
+    margin: 0;
+    padding: 6px 45px 8px 10px;
+}
+
 .main_menu li a:hover{
 	color: white;
 }
