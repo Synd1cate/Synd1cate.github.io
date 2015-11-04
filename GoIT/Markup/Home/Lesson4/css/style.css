@@ -1,5 +1,6 @@
 body {
     background-image: url(../img/bg.jpg);
+    font-family: Tahoma, Arial, sans-serif;
 }
 .wrapper {
     width: 1000px;
@@ -30,7 +31,6 @@ body {
     margin-left: 28px;
 }
 .logo span {
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 12px;
     color: #128aa7;
     display: block;
@@ -42,7 +42,6 @@ body {
 /* Наши контакты */
 .contacts {
     float: right;
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 12px;
     color: #5fa5bb;
     margin-top: 49px;
@@ -70,7 +69,6 @@ body {
 }
 .countries span {
     display: block;
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 10px;
     color: #128aa7;
 }
@@ -116,7 +114,6 @@ body {
     line-height: 28px;
     text-decoration: none;
     display: block;
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
 }
 .main_menu ul {
@@ -156,7 +153,6 @@ body {
 /* -End- Главное меню */
 /* Основной блок с контентом */
 .content {
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.714;
 }
@@ -171,8 +167,8 @@ body {
     border-right: 1px solid #c7cacf;
     background: #edeef0;
 }
-.info_block h3,
-.news_block h3 {
+.info_block span,
+.news_block span {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -200,7 +196,6 @@ body {
     margin: 11px 0;
     color: white;
     text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
     font-size: 12px;
 }
 /* -End- Блок копирайта*/
