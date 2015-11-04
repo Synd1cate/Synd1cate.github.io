@@ -197,8 +197,10 @@ body {
 /* Блок копирайта */
 .footer span {
     display: block;
-    margin-top: 11px;
+    margin: 11px 0;
     color: white;
     text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 12px;
 }
 /* -End- Блок копирайта*/
