@@ -12,6 +12,8 @@ body {
     -o-box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
 }
+
+/* Зачистка границ */
 .clearfix:after {
     content: "";
     display: block;
@@ -19,6 +21,7 @@ body {
     height: 0;
     width: 100%;
 }
+/* -End- Зачистка границ */
 /* Логотип */
 .logo {
     float:left;
@@ -49,46 +52,46 @@ body {
     margin-left: 528px;
 }
 .contacts li:first-child {
-    font-weight: bold;
-    margin-bottom: 4px;
+    font-weight: bold; /* Жирный шрифт для первого елемента списка */
+    margin-bottom: 4px; /* Делаю внешний отступ между первым и последующим елементом списка */
 }
 .contacts li {
-    line-height: 16px;
+    line-height: 16px; /* Увеличиваю отступ между строками */
 }
 /* -End- Наши контакты */
 /* Страны */
 .countries {
-    float: right;
-    margin-top: 33px;
-    margin-right: 33px;
+    float: right; /* Позиционирую блок страны по правому краю */
+    margin-top: 33px; /* Внешний отступ сверху */
+    margin-right: 33px; /* Внешний отступ справа */
 }
 .countries li {
-    float: left;
-    text-align: center;
-    width: 58px;
+    float: left; /* Выравниваю список по горизонтали */
+    text-align: center; /* Выравниваю названия флагов по центру*/
+    width: 58px; /* Задаю ширину поля для названия флагов */
 }
 .countries span {
     display: block;
-    font-size: 10px;
-    color: #128aa7;
+    color: #128aa7; /* Цвет текста названия флагов */
+    font-size: 10px; /* Размер текста названия флагов */
 }
 /* -End- Страны */
 /* Центральное изображение */
 .image {
-    border-top: 1px solid #128aa7;
-    border-bottom: 1px solid #128aa7;
-    font-size: 0;
+    border-top: 1px solid #128aa7; /* Синяя рамка сверху от центральной картинки */
+    border-bottom: 1px solid #128aa7; /* Синяя рамка снизу от центральной картинки */
+    font-size: 0; /* Убираю отступ после картинки */
 }
 /* -End- Центральное изображение */
 /* Главное меню сайта */
 .main_menu {
-    height: 28px;
-    border-top: 1px solid #cacbcb;
-    border-bottom: 1px solid black;
+    height: 28px; /* Высота меню */
+    border-top: 1px solid #cacbcb; /* Серая полоска сверху меню */
+    border-bottom: 1px solid black; /* Черная полоска снизу меню */
     position: relative;
     z-index: 1;
-    /* Градиент для меню */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+/* Градиент для меню */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
     background: rgb(55,55,55); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
@@ -97,48 +100,48 @@ body {
     background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
-    /* -End- Градиент для меню */
+/* -End- Градиент для меню */
+/* Тень для меню */
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
     -o-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+/* -End- Тень для меню */
 }
 .main_menu li {
-    position: relative;
-    float: left;
+    position: relative; /* Для того, чтоб относительно этого пункта меню, мы могли выставлять наш ul(выпадающий список) абсолютом(position: absolute;) */
+    float: left; /* Выравниваем список по горизонтали */
 }
-.main_menu li a {
-    position: relative;
-    padding: 0 33px;
-    color: white;
-    line-height: 28px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
+.main_menu a {
+    padding: 0 35px;
+    color: white; /* Цвет текста ссылки в пункте меню */
+    line-height: 28px; /* На всю высоту меню, чтоб вся область пункта была кликабельной */
+    display: block; /* Чтоб работал line-height */
+    text-decoration: none; /* Убираю подчеркивание ссылок пунктов меню*/
+    font-size: 14px; /* Размер текста ссылок пунктов меню*/
+}
+.main_menu > li:first-child {
+    margin-left: 27px;
 }
 .main_menu ul {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s;
-    left: 23px;
+    position: absolute; /* Позиционирование относительно родителя (.main_menu li) */
+    display: none; /* Скрываем ul в main_menu, чтоб не мешало */
+    top: 29px; /* Отступ выпадающего меню от родителя */
+    left: 25px;
+    background: #303030; /* Фон выпадающего меню */
+/* Тень для выпадающего меню */
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -o-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+/* -End- Тень для выпадающего меню */
 }
 .main_menu li:hover ul {
-    visibility: visible;
-    opacity: 1;
-    top: 100%;
-}
-.main_menu ul li {
-    background: #303030;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    -o-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    display: block; /* Как сказал Олег - "Вся суть выпадающего меню" =) */
 }
 .main_menu ul+a:after {
     content: "";
     display: block;
-    position: absolute;
     margin-top: -2px;
     top: 50%;
     right: 10px;
@@ -147,8 +150,8 @@ body {
     background: url(../img/triangle.png);
 }
 .main_menu ul a {
-    margin: 0;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 45px 0 10px;
 }
 /* -End- Главное меню */
 /* Основной блок с контентом */
@@ -174,9 +177,6 @@ body {
     font-size: 18px;
     display: block;
     margin-top: 3px;
-}
-.text_block {
-    float: left;
 }
 .news_block {
     float: right;
