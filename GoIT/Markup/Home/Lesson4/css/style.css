@@ -140,11 +140,12 @@ body {
     display: block; /* Как сказал Олег - "Вся суть выпадающего меню" =) */
 }
 .main_menu ul+a:after {
+    position: absolute;
     content: "";
     display: block;
     margin-top: -2px;
     top: 50%;
-    right: 10px;
+    right: 25px;
     height: 6px;
     width: 5px;
     background: url(../img/triangle.png);
