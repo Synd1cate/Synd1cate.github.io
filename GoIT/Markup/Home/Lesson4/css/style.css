@@ -126,15 +126,18 @@ body {
 .main_menu ul {
     position: absolute; /* Позиционирование относительно родителя (.main_menu li) */
     display: none; /* Скрываем ul в main_menu, чтоб не мешало */
-    top: 29px; /* Отступ выпадающего меню от родителя */
+    top: 28px; /* Отступ выпадающего меню от родителя */
     left: 25px;
-    background: #303030; /* Фон выпадающего меню */
+    padding-top: 1px;
 /* Тень для выпадающего меню */
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
     -o-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
 /* -End- Тень для выпадающего меню */
+}
+.main_menu ul li {
+    background: #303030; /* Фон выпадающего меню */
 }
 .main_menu li:hover ul {
     display: block; /* Как сказал Олег - "Вся суть выпадающего меню" =) */
