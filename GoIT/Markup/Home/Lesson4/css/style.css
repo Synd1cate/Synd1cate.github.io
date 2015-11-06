@@ -70,7 +70,7 @@ body {
     text-align: center; /* Выравниваю названия флагов по центру*/
     width: 58px; /* Задаю ширину поля для названия флагов */
 }
-.countries span {
+.countries a {
     display: block;
     color: #128aa7; /* Цвет текста названия флагов */
     font-size: 10px; /* Размер текста названия флагов */
@@ -90,6 +90,7 @@ body {
     border-bottom: 1px solid black; /* Черная полоска снизу меню */
     position: relative;
     z-index: 1;
+    text-align: justify;
 /* Градиент для меню */
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
     background: rgb(55,55,55); /* Old browsers */
@@ -110,7 +111,7 @@ body {
 }
 .main_menu li {
     position: relative; /* Для того, чтоб относительно этого пункта меню, мы могли выставлять наш ul(выпадающий список) абсолютом(position: absolute;) */
-    float: left; /* Выравниваем список по горизонтали */
+    display: inline-block; /* Выравниваем список по горизонтали */
 }
 .main_menu a {
     padding: 0 35px;
@@ -119,9 +120,6 @@ body {
     display: block; /* Чтоб работал line-height */
     text-decoration: none; /* Убираю подчеркивание ссылок пунктов меню*/
     font-size: 14px; /* Размер текста ссылок пунктов меню*/
-}
-.main_menu > li:first-child {
-    margin-left: 27px;
 }
 .main_menu ul {
     position: absolute; /* Позиционирование относительно родителя (.main_menu li) */
@@ -162,20 +160,28 @@ body {
 .content {
     font-size: 14px;
     line-height: 1.714;
+    overflow: hidden; /* чтобы лишее обрезалось */
 }
 .info_block {
     float: left;
     text-align: center;
     width: 210px;
-    height: 546px;
     color: #424c43;
     box-sizing: border-box;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
     background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
-.info_block span,
-.news_block span {
+.center_block {
+    float: left;
+    background: white;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.info_block h2,
+.news_block h2 {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -186,16 +192,17 @@ body {
     float: right;
     text-align: center;
     width: 210px;
-    height: 546px;
     color: #424c43;
     box-sizing: border-box;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
     background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
 }
 /* -End- Основной блок с контентом */
 /* Блок копирайта */
-.footer span {
+footer span {
     display: block;
     margin: 11px 0;
     color: white;
