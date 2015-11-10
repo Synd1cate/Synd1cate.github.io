@@ -25,7 +25,7 @@ td {
     width: 250px;
 }
 .right {
-    width: 165px;
+    width: 150px;
 }
 .rectangle {
     height: 31px;
@@ -61,4 +61,7 @@ td {
 .border_bottom_right {
     border-bottom: none;
     border-right: none;
+}
+.height_6 {
+    height: 50px;
 }
