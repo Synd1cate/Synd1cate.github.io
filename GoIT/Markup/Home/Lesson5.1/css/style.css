@@ -46,22 +46,6 @@ td {
 .border_bottom {
     border-bottom: none;
 }
-.border_top_right {
-    border-top: none;
-    border-right: none;
-}
-.border_top_left {
-    border-top: none;
-    border-left: none;
-}
-.border_bottom_left {
-    border-bottom: none;
-    border-left: none;
-}
-.border_bottom_right {
-    border-bottom: none;
-    border-right: none;
-}
 .height_6 {
     height: 65px;
 }

@@ -12,13 +12,17 @@ body {
     font-family: "Helvetica Neue";
     font-size: 14px;
     background-image: url(../img/bg.jpg);
-    height: 1200px;
+    background-size: cover;
     margin: 0 auto;
 }
 header {
     background-color: #074c89;
     background-image: url(../img/bg_menu.png);
     height: 36px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
 }
 .menu_reg {
     float: right;
@@ -109,6 +113,7 @@ header {
 /* -End- Зачистка границ */
 .wrapper {
     margin-top: 213px;
+    margin-bottom: 202px;
 }
 .form_reg {
     margin: 0 auto;
