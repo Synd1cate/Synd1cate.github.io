@@ -23,7 +23,7 @@ body {
 }
 .wrapper {
     padding: 18px 46px 0 46px;
-    background-color: #d0d0d0;
+    /*background-color: #d0d0d0;*/
     width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -64,6 +64,7 @@ body {
     height: 15px;
     font-size: 12px;
     font-family: "Lucida Sans Unicode", arial, verdana, sans-serif;
+    letter-spacing: -1px;
     background: rgba(31,105,137,1);
 /* Old Browsers */background: -moz-linear-gradient(top, rgba(31,105,137,1) 0%, rgba(12,50,85,1) 100%);
 /* FF3.6+ */background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,105,137,1)), color-stop(100%, rgba(12,50,85,1)));
@@ -74,9 +75,9 @@ body {
 /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6989', endColorstr='#0c3255', GradientType=0 );
 /* IE6-9 */
 
-    -webkit-box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
-    -moz-box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
-    box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(124,135,148,1);
+    -moz-box-shadow: 2px 2px 2px 0 rgba(124,135,148,1);
+    box-shadow: 2px 2px 2px 0 rgba(124,135,148,1);
 }
 .avtoriz li {
     display: inline-block;
@@ -105,6 +106,27 @@ input {
 .avtoriz .ForgotYourPassword {
     text-decoration: underline;
     color: #bfbfbf;
+    letter-spacing: 0;
+}
+.navi {
+    text-align: center;
+    background: white;
+    height: 19px;
+    width: 75px;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-right: 6px;
+    margin-left: 17px;
+    border: 1px solid #c1c8cb;
+    -webkit-box-shadow: 0 0 3px 0 rgba(193,200,203,1);
+    -moz-box-shadow: 0 0 3px 0 rgba(193,200,203,1);
+    box-shadow: 0 0 3px 0 rgba(193,200,203,1);
+}
+.navi li {
+    margin-right: 4px;
+}
+.navi a {
+    display: block;
 }
 .main_banner {
     margin-top: 11px;
