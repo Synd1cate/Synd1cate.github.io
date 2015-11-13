@@ -18,9 +18,14 @@
 }
 /* -End- Зачистка границ */
 
-.header {
+body {
+font-family: arial, verdana, sans-serif;
+}
+.wrapper {
     padding: 18px 46px 0 46px;
     background-color: #d0d0d0;
+    width: 1000px;
+    margin: 0 auto;
 }
 .telephone {
     float: left;
