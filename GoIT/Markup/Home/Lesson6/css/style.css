@@ -19,16 +19,34 @@
 /* -End- Зачистка границ */
 
 body {
-font-family: arial, verdana, sans-serif;
+
 }
 .wrapper {
     padding: 18px 46px 0 46px;
     background-color: #d0d0d0;
     width: 1000px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .telephone {
+    position: relative;
     float: left;
+    color: #5e696d;
+    font-size: 18px;
+    font-family: arial, verdana, sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+    margin-left: 31px;
+}
+.telephone::before {
+    position: absolute;
+    top: -2px;
+    left: -25px;
+    height: 21px;
+    width: 22px;
+    content: "";
+    background: url(../img/head-phone.png);
+
 }
 .navi {
     float: right;
@@ -40,8 +58,12 @@ font-family: arial, verdana, sans-serif;
     position: relative;
     float: right;
     padding: 4px 5px 5px 25px;
-    border-radius: 3px;
-    height: 25px;
+    border-top: 1px solid #1f6787;
+    border-bottom: 1px solid #0c3357;
+    border-radius: 2px;
+    height: 15px;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode", arial, verdana, sans-serif;
     background: rgba(31,105,137,1);
 /* Old Browsers */background: -moz-linear-gradient(top, rgba(31,105,137,1) 0%, rgba(12,50,85,1) 100%);
 /* FF3.6+ */background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,105,137,1)), color-stop(100%, rgba(12,50,85,1)));
@@ -51,21 +73,30 @@ font-family: arial, verdana, sans-serif;
 /* IE 10+ */background: linear-gradient(to bottom, rgba(31,105,137,1) 0%, rgba(12,50,85,1) 100%);
 /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6989', endColorstr='#0c3255', GradientType=0 );
 /* IE6-9 */
+
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
+    box-shadow: 2px 2px 2px 0px rgba(124,135,148,1);
 }
 .avtoriz li {
     display: inline-block;
 }
 .authorization::before {
     position: absolute;
-    top: 6px;
-    left: 7px;
+    top: 5px;
+    left: 8px;
     height: 17px;
     width: 13px;
     content: "";
     background: url(../img/work6.png);
 }
 input {
-    height: 16px;
+    margin-right: 5px;
+    height: 10px;
+    width: 107px;
+    font-size: 11px;
+    padding-left: 2px;
+    padding-bottom: 2px;
 }
 .avtoriz a {
     color: white;
@@ -74,4 +105,8 @@ input {
 .avtoriz .ForgotYourPassword {
     text-decoration: underline;
     color: #bfbfbf;
+}
+.main_banner {
+    margin-top: 11px;
+    font-size: 0;
 }
