@@ -57,7 +57,7 @@ body {
 .avtoriz {
     position: relative;
     float: right;
-    padding: 4px 5px 5px 25px;
+    padding: 3px 5px 5px 25px;
     border-top: 1px solid #1f6787;
     border-bottom: 1px solid #0c3357;
     border-radius: 2px;
@@ -84,7 +84,7 @@ body {
 }
 .authorization::before {
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 8px;
     height: 17px;
     width: 13px;
@@ -99,6 +99,24 @@ input {
     padding-left: 2px;
     padding-bottom: 2px;
 }
+input[type="button"] {
+    background: none;
+    border: 0;
+    height: 14px;
+    width: 34px;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+}
+.sep::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 195px;
+    height: 10px;
+    width: 1px;
+    background-color: #d2d8dd;
+}
 .avtoriz a {
     color: white;
     text-decoration: none;
@@ -107,6 +125,8 @@ input {
     text-decoration: underline;
     color: #bfbfbf;
     letter-spacing: 0;
+    margin-left: 20px;
+    margin-right: 5px;
 }
 .navi {
     text-align: center;
@@ -124,9 +144,6 @@ input {
 }
 .navi li {
     margin-right: 4px;
-}
-.navi a {
-    display: block;
 }
 .main_banner {
     margin-top: 11px;
