@@ -17,12 +17,12 @@
     width: 100%;
 }
 /* -End- Зачистка границ */
-
 body {
-
+    font-family: "Lucida Sans Unicode", arial, verdana, sans-serif;
 }
+
 .wrapper {
-    padding: 18px 46px 0 46px;
+    padding: 18px 45px 0 45px;
     /*background-color: #d0d0d0;*/
     width: 1000px;
     margin: 0 auto;
@@ -34,9 +34,9 @@ body {
     color: #5e696d;
     font-size: 18px;
     font-family: arial, verdana, sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.45px;
     margin-top: 6px;
-    margin-left: 31px;
+    margin-left: 32px;
 }
 .telephone::before {
     position: absolute;
@@ -57,10 +57,10 @@ body {
 .avtoriz {
     position: relative;
     float: right;
-    padding: 3px 5px 5px 25px;
+    padding: 2px 5px 7px 25px;
     border-top: 1px solid #1f6787;
     border-bottom: 1px solid #0c3357;
-    border-radius: 2px;
+    border-radius: 3px;
     height: 15px;
     font-size: 12px;
     font-family: "Lucida Sans Unicode", arial, verdana, sans-serif;
@@ -92,27 +92,33 @@ body {
     background: url(../img/work6.png);
 }
 input {
-    margin-right: 5px;
+    margin-right: 4px;
     height: 10px;
     width: 107px;
     font-size: 11px;
-    padding-left: 2px;
+    padding-top: 1px;
+    padding-left: 3px;
     padding-bottom: 2px;
+    letter-spacing: 0.45px;
 }
 input[type="button"] {
     background: none;
     border: 0;
+    margin: 0;
+    margin-top: 1px;
+    padding-left: 0;
+    padding-top: 0;
     height: 14px;
     width: 34px;
     color: white;
-    margin: 0;
-    padding-left: 0;
+    font-family: "Lucida Sans Unicode";
+    letter-spacing: -0.3px;
 }
 .sep::before {
     position: absolute;
     content: "";
     top: 7px;
-    right: 195px;
+    right: 197px;
     height: 10px;
     width: 1px;
     background-color: #d2d8dd;
@@ -120,13 +126,14 @@ input[type="button"] {
 .avtoriz a {
     color: white;
     text-decoration: none;
+    letter-spacing: -0.8px;
 }
 .avtoriz .ForgotYourPassword {
     text-decoration: underline;
     color: #bfbfbf;
     letter-spacing: 0;
-    margin-left: 20px;
-    margin-right: 5px;
+    margin-left: 18px;
+    margin-right: 6px;
 }
 .navi {
     text-align: center;
@@ -146,6 +153,53 @@ input[type="button"] {
     margin-right: 4px;
 }
 .main_banner {
-    margin-top: 11px;
+    margin-top: 10px;
     font-size: 0;
+}
+
+/* Меню сайта */
+.main_menu {
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #2c345a;
+    border-radius: 5px;
+    margin-top: 6px;
+    background: rgba(77,86,99,1);
+/* Old Browsers */background: -moz-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(45,50,54,1) 9%, rgba(1,1,1,1) 100%);
+/* FF3.6+ */background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(77,86,99,1)), color-stop(9%, rgba(45,50,54,1)), color-stop(100%, rgba(1,1,1,1)));
+/* Chrome, Safari4+ */background: -webkit-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(45,50,54,1) 9%, rgba(1,1,1,1) 100%);
+/* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(45,50,54,1) 9%, rgba(1,1,1,1) 100%);
+/* Opera 11.10+ */background: -ms-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(45,50,54,1) 9%, rgba(1,1,1,1) 100%);
+/* IE 10+ */background: linear-gradient(to bottom, rgba(77,86,99,1) 0%, rgba(45,50,54,1) 9%, rgba(1,1,1,1) 100%);
+/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5663', endColorstr='#010101', GradientType=0 );
+/* IE6-9 */
+}
+.main_menu ul {
+    float: left;
+    height: 32px;
+    width: 75%;
+    background: lightgrey;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+
+}
+.main_menu .basket {
+    float: left;
+    width: 25%;
+    background: yellow;
+}
+.main_menu li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.main_menu li a {
+    text-decoration: none;
+    line-height: 32px;
+}
+.basket span {
+    font-size: 11px;
 }
