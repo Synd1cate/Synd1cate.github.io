@@ -178,10 +178,9 @@ input[type="button"] {
     float: left;
     height: 32px;
     width: 75%;
-    background: lightgrey;
     text-align: center;
     box-sizing: border-box;
-    padding-left: 60px;
+    padding-left: 55px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
@@ -197,6 +196,7 @@ input[type="button"] {
     margin-left: 25px;
 }
 .main_menu li a {
+    color: #b1bcc0;
     text-decoration: none;
     line-height: 32px;
 }
