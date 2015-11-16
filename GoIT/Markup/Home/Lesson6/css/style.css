@@ -176,28 +176,43 @@ input[type="button"] {
 }
 .main_menu ul {
     float: left;
-    width: 75%;
-    text-align: center;
+    width: 680px;
     box-sizing: border-box;
-    padding-left: 55px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: -0.2px;
-
+    text-align: center;
+    padding-left: 35px;
 }
 .main_menu .order {
     float: left;
-    width: 25%;
+    width: 228px;
 }
 .main_menu li {
     display: inline-block;
-    margin-left: 25px;
+    width: auto;
+    margin-left: 20px;
 }
 .main_menu li a {
     color: #b1bcc0;
     text-decoration: none;
     line-height: 32px;
 }
+.main_menu .active {
+    border-radius: 15px;
+    padding: 2px 19px 3px 21px;
+    background: rgba(31,104,135,1);
+    background: -moz-linear-gradient(top, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,104,135,1)), color-stop(100%, rgba(12,51,87,1)));
+    background: -webkit-linear-gradient(top, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+    background: -o-linear-gradient(top, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+    background: -ms-linear-gradient(top, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', endColorstr='#0c3357', GradientType=0 );
+}
+/* -End- Меню сайта */
+
+
 .order {
     position: relative;
     padding-top: 6px;
@@ -205,15 +220,15 @@ input[type="button"] {
 .basket {
     position: absolute;
     top: 7px;
-    left: 1px;
+    left: 2px;
 }
 .order .product {
-    color: white;
+    color: #929b9f;
     font-size: 11px;
-    margin-left: 29px;
+    margin-left: 30px;
 }
 .order .sum {
-    color: white;
+    color: #8a9296;
     font-size: 11px;
     margin-left: 9px;
 }
@@ -228,4 +243,94 @@ input[type="button"] {
     font-size: 12px;
     margin-left: 11px;
     letter-spacing: -0.4px;
+}
+
+main {
+    margin-top: 165px;
+}
+/* Left Catalog */
+.sidebar {
+    position: relative;
+    float: left;
+}
+.sidebar > a {
+    margin-left: -1px;
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    padding: 7px 7px 5px 28px;
+    letter-spacing: -0.2px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(140,150,154,1);
+    -moz-box-shadow: 1px 2px 2px 0px rgba(140,150,154,1);
+    box-shadow: 1px 2px 2px 0px rgba(140,150,154,1);
+}
+.sidebar > a::before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 22px;
+    top: 1px;
+    left: 2px;
+    background: url(../img/catalog.png);
+}
+.catalog {
+    position: relative;
+    margin-left: 1px;
+}
+.catalog > a:first-child{
+    display: block;
+    margin-top: 13px;
+    width: 150px;
+}
+.catalog > a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    padding: 8px 7px 4px 29px;
+    letter-spacing: -0.2px;
+    box-sizing: border-box;
+}
+.catalog > a::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 26px;
+    top: 1px;
+    left: 3px;
+    background: url(../img/catalog_marker.png);
+}
+.catalog li{
+    position: relative;
+}
+.catalog li a::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 35px;
+    height: 8px;
+    width: 8px;
+    background: url(../img/submenumarker.png);
+}
+.catalog li a {
+    display: block;
+    padding-left: 46px;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+.catalog .submenu_active {
+    font-style: italic;
+    text-decoration: underline;
+    color: #0c3256;
+    font-size: 14px;
+    font-family: arial, verdana, sans-serif;
+    font-weight: bold;
 }
