@@ -176,7 +176,6 @@ input[type="button"] {
 }
 .main_menu ul {
     float: left;
-    height: 32px;
     width: 75%;
     text-align: center;
     box-sizing: border-box;
@@ -186,10 +185,9 @@ input[type="button"] {
     letter-spacing: -0.2px;
 
 }
-.main_menu .basket {
+.main_menu .order {
     float: left;
     width: 25%;
-    background: yellow;
 }
 .main_menu li {
     display: inline-block;
@@ -200,6 +198,34 @@ input[type="button"] {
     text-decoration: none;
     line-height: 32px;
 }
-.basket span {
+.order {
+    position: relative;
+    padding-top: 6px;
+}
+.basket {
+    position: absolute;
+    top: 7px;
+    left: 1px;
+}
+.order .product {
+    color: white;
     font-size: 11px;
+    margin-left: 29px;
+}
+.order .sum {
+    color: white;
+    font-size: 11px;
+    margin-left: 9px;
+}
+.order .number {
+    color: #0d5a8f;
+    font-size: 12px;
+    margin-left: 2px;
+    letter-spacing: -0.4px;
+}
+.order .price {
+    color: #0d5a8f;
+    font-size: 12px;
+    margin-left: 11px;
+    letter-spacing: -0.4px;
 }
