@@ -12,23 +12,14 @@
                 <div class="telephone">
                     <span>(044)123-45-67 (044)567-89-10</span>
                 </div>
-                <nav class="navi">
+                <div class="header_auth">
                     <ul>
-                        <li><a href="#"><img src="img/home.png" alt="home" /></a></li>
-                        <li><a href="#"><img src="img/map_suite.png" alt="map suite" /></a></li>
-                        <li><a href="#"><img src="img/mail.png" alt="mail" /></a></li>
-                    </ul>
-                </nav>
-                <div class="avtoriz">
-                    <ul>
-                        <li class="authorization">
-                            <input type="text" name="Login" placeholder="логин">
-                        </li>
                         <li>
-                            <input type="password" name="Password" placeholder="пароль">
-                        </li>
-                        <li>
-                            <input type="button" name="Login" value="вход">
+                            <form action="#" method="post">
+                                <input type="text" name="Login" placeholder="логин">
+                                <input type="password" name="Password" placeholder="пароль">
+                                <input type="submit" value="вход">
+                            </form>
                         </li>
                         <li>
                             <a class="sep" href="#">регистрация</a>
@@ -38,6 +29,13 @@
                         </li>
                     </ul>
                 </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#"><img src="img/home.png" alt="home" /></a></li>
+                        <li><a href="#"><img src="img/map_suite.png" alt="map suite" /></a></li>
+                        <li><a href="#"><img src="img/mail.png" alt="mail" /></a></li>
+                    </ul>
+                </nav>
             </header>
             <div class="main_banner">
                 <img src="img/main_banner.png" alt="banner">
@@ -45,31 +43,30 @@
             <div class="main_menu clearfix">
                 <nav>
                     <ul>
-                        <li><a class="active" href="#">О компани</a></li>
-                        <li><a href="#">Оплата</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Статьи</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a class="main_menu_punkt_1 active" href="#">О компани</a></li>
+                        <li><a class="main_menu_punkt_2" href="#">Оплата</a></li>
+                        <li><a class="main_menu_punkt_3" href="#">Доставка</a></li>
+                        <li><a class="main_menu_punkt_4" href="#">Статьи</a></li>
+                        <li><a class="main_menu_punkt_5" href="#">Контакты</a></li>
                     </ul>
-                    <div class="order">
+                    <div class="basket_area">
                         <a href="#"><img class="basket" src="img/basket.png" alt="Корзина" /></a>
-                        <span class="product">товаров:<span class="number">0</span></span>
-                        <span class="sum">на сумму:<span class="price">0,00 грн.</span></span>
+                        <span class="product">товаров:<span class="number">0</span></span></li>
+                        <span class="sum">на сумму:<span class="price">0,00 грн.</span></span></li>
                     </div>
                 </nav>
             </div>
             <main class="clearfix">
                 <aside class="sidebar">
-                    <a href="">Каталог продукции:</a>
-                    <div class="catalog">
-                        <a href="">Шины</a>
-                        <ul>
-                            <li><a href="#">Наименование 1</a></li>
-                            <li><a class="submenu_active" href="#">Наименование 2</a></li>
-                            <li><a href="#">Наименование 3</a></li>
-                            <li><a href="#">Наименование 4</a></li>
-                        </ul>
-                    </div>
+                    <a class="product_catalog" href="#"><img src="img/catalog.png" alt="" />Каталог продукции:</a>
+                    <a href="#">Шины</a>
+                    <ul>
+                        <li><a href="#">Наименование 1</a></li>
+                        <li><a href="#">Наименование 2</a></li>
+                        <li><a href="#">Наименование 3</a></li>
+                        <li><a href="#">Наименование 4</a></li>
+                    </ul>
+                    <a href="#">Диски</a>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
