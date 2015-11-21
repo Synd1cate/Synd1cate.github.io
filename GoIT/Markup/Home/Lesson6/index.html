@@ -16,16 +16,18 @@
                     <ul>
                         <li>
                             <form action="#" method="post">
-                                <input type="text" name="Login" placeholder="логин">
-                                <input type="password" name="Password" placeholder="пароль">
-                                <input type="submit" value="вход">
+                                <input class="input_reg" type="text" name="Login" placeholder="логин">
+                                <input class="input_reg" type="password" name="Password" placeholder="пароль">
+                                <input class="input_reg input_submit_reg" type="submit" value="вход">
                             </form>
                         </li>
                         <li>
                             <a class="sep" href="#">регистрация</a>
                         </li>
                         <li>
-                            <a class="ForgotYourPassword" href="#">забыли пароль?</a>
+                            <div class="ForgotYourPassword_border">
+                                <a class="ForgotYourPassword" href="#">забыли пароль?</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -49,38 +51,210 @@
                         <li><a class="main_menu_punkt_4" href="#">Статьи</a></li>
                         <li><a class="main_menu_punkt_5" href="#">Контакты</a></li>
                     </ul>
-                    <div class="basket_area">
-                        <a href="#"><img class="basket" src="img/basket.png" alt="Корзина" /></a>
-                        <span class="product">товаров:<span class="number">0</span></span></li>
-                        <span class="sum">на сумму:<span class="price">0,00 грн.</span></span></li>
+                    <div class="basket_img">
+                        <a href="#"><img src="img/basket.png" alt="Корзина" /></a>
+                    </div>
+                    <div class="basket">
+                        <span class="basket_product">товаров:</span>
+                        <span class="basket_number_item">0</span>
+                        <span class="basket_sum">на сумму:</span>
+                        <span class="basket_price">0,00 грн.</span>
                     </div>
                 </nav>
             </div>
             <main class="clearfix">
                 <aside class="sidebar">
-                    <a class="product_catalog" href="#"><img src="img/catalog.png" alt="" />Каталог продукции:</a>
-                    <a href="#">Шины</a>
+                    <a class="product_catalog" href="#"><img src="img/catalog.png" alt="Catalog" />Каталог продукции:</a>
+                    <a class="first_catalog_item" href="#"><img src="img/catalog_marker.png" alt="Шины" />Шины</a>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
+                        <li><a class="active" href="#">Наименование 2</a></li>
+                        <li><a href="#">Наименование 3</a></li>
+                        <li><a href="#">Наименование 4</a></li>
+                    </ul>
+                    <a class="first_catalog_item catalog_item_2" href="#"><img src="img/catalog_marker.png" alt="Диски" />Диски</a>
+                    <ul>
+                        <li class="subcatalog"><a class="subcatalog" href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
-                    <a href="#">Диски</a>
+                    <a class="first_catalog_item catalog_item_3" href="#"><img src="img/catalog_marker.png" alt="Болты" />Болты</a>
                     <ul>
-                        <li><a href="#">Наименование 1</a></li>
-                        <li><a href="#">Наименование 2</a></li>
-                        <li><a href="#">Наименование 3</a></li>
-                        <li><a href="#">Наименование 4</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Наименование 1</a></li>
+                        <li class="subcatalog"><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
                 </aside>
+                <section class="clearfix">
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Goodyear </span>
+                                <span class="product_model">Ultra Grip Extreme </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/goodyear.png" alt="Goodyear"></span>
+                            </div>
+                            <span class="product_price">90.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Nokian </span>
+                                <span class="product_model">Hakkapeliitta R </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/nokian.png" alt="Nokian"></span>
+                            </div>
+                            <span class="product_price">115.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Hankook </span>
+                                <span class="product_model">K 708 155/65 R14 </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/hankook.png" alt="Hankook"></span>
+                            </div>
+                            <span class="product_price">393.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Goodyear </span>
+                                <span class="product_model">Ultra Grip Extreme </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/goodyear.png" alt="Goodyear"></span>
+                            </div>
+                            <span class="product_price">90.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Nokian </span>
+                                <span class="product_model">Hakkapeliitta R </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/nokian.png" alt="Nokian"></span>
+                            </div>
+                            <span class="product_price">115.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Hankook </span>
+                                <span class="product_model">K 708 155/65 R14 </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/hankook.png" alt="Hankook"></span>
+                            </div>
+                            <span class="product_price">393.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Goodyear </span>
+                                <span class="product_model">Ultra Grip Extreme </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/goodyear.png" alt="Goodyear"></span>
+                            </div>
+                            <span class="product_price">90.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Nokian </span>
+                                <span class="product_model">Hakkapeliitta R </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/nokian.png" alt="Nokian"></span>
+                            </div>
+                            <span class="product_price">115.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <figcaption>
+                                <span class="product_name">Hankook </span>
+                                <span class="product_model">K 708 155/65 R14 </span>
+                            </figcaption>
+                            <div class="product_card">
+                                <span class="product_img"><img src="img/hankook.png" alt="Hankook"></span>
+                            </div>
+                            <span class="product_price">393.00 <span class="product_currency">грн.</span></span>
+                        </figure>
+                    </a>
+                </section>
+                <aside class="brands clearfix">
+                    <a class="product_catalog" href="#"><img src="img/brands.png" alt="Brands" />Бренды:</a>
+                    <a class="first_catalog_item" href="#"><img src="img/catalog_marker.png" alt="Шины" />Шины</a>
+                    <form action="/" method="post">
+                        <div>
+                            <input class="brands_name" type="checkbox" id="tire_brand_1">
+                            <label for="tire_brand_1">Бренд 1</label>
+                        </div>
+                        <div>
+                            <input class="brands_name" type="checkbox" id="tire_brand_2">
+                            <label for="tire_brand_2">Бренд 2</label>
+                        </div>
+                        <div>
+                            <input class="brands_name" type="checkbox" id="tire_brand_3">
+                            <label for="tire_brand_3">Бренд 3</label>
+                        </div>
+                    </form>
+                    <a class="first_catalog_item catalog_item_2 disc_brand" href="#"><img src="img/catalog_marker.png" alt="Диски" />Диски</a>
+                    <form class="form_disc_brand" action="/" method="post">
+                        <div>
+                            <input class="brands_name" type="checkbox" id="disc_brand_1">
+                            <label for="disc_brand_1">Бренд 1</label>
+                        </div>
+                        <div>
+                            <input class="brands_name" type="checkbox" id="disc_brand_2">
+                            <label for="disc_brand_2">Бренд 2</label>
+                        </div>
+                        <div>
+                            <input class="brands_name" type="checkbox" id="disc_brand_3">
+                            <label for="disc_brand_3">Бренд 3</label>
+                        </div>
+                        <div>
+                            <input class="select_brands" type="submit" value="Выбрать">
+                        </div>
+                    </form>
+                </aside>
             </main>
+            <div class="prefooter">
+                <img src="img/toyo.png" alt="Toyo">
+                <img src="img/bridgestore.png" alt="Bridgestore">
+                <img src="img/internacional.png" alt="Internacional Tire">
+                <img src="img/dooper.png" alt="dooper">
+                <img src="img/avon.png" alt="AVON">
+                <img src="img/tire.png" alt="Tire Factory">
+                <img src="img/pirelli.png" alt="Pirelli">
+                <img src="img/dunlop.png" alt="DUNLOP">
+            </div>
+            <footer>
+                <ul>
+                    <li><a class="footer_sep active" href="#">О компании</a></li>
+                    <li><a class="footer_sep" href="#">Доставка</a></li>
+                    <li><a class="footer_sep" href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <span>
+                    Создание сайта &copy; Global Vision
+                </span>
+            </footer>
         </div>
     </body>
 </html>
