@@ -103,18 +103,18 @@ body {
     -moz-box-shadow: 2px 2px 2px 0 rgba(124,135,148,1);
     box-shadow: 2px 2px 2px 0 rgba(124,135,148,1);
 }
-.header_auth li {
-    display: inline-block;
+.header_auth span {
+    color: #fff;
+    font-size: 11px;
 }
 .header_auth a {
-    display: block;
+    display: inline-block;
     color: white;
     text-decoration: none;
     letter-spacing: -0.15px;
-    margin-left: -3px;
-    margin-right: 17px;
 }
 .header_auth form {
+    display: inline-block;
     margin-left: 24px;
 }
 .header_auth form::before {
@@ -142,27 +142,20 @@ body {
     font-family: "Lucida Sans Unicode", arial, verdana, sans-serif;
     letter-spacing: -0.3px;
     margin-left: -2px;
+    padding-right: 0;
+    margin-right: 0;
     border: 0;
     background-color: inherit;
-}
-.sep::before {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 1px;
-    top: 7px;
-    right: 196px;
-    background-color: #d2d8dd;
 }
 .header_auth .ForgotYourPassword {
     color: #bfbfbf;
     font-size: 12px;
     letter-spacing: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 1px;
 }
 .ForgotYourPassword_border {
+    display: inline-block;
+    margin-left: 17px;
+    padding-bottom: 1px;
     border-bottom: 1px solid #7c8794;
 }
 
