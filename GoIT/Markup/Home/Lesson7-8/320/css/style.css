@@ -1,0 +1,32 @@
+body {
+    background: url(../img/background.jpg) 0 0 no-repeat;
+}
+.wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.header {
+    text-align: center;
+}
+.main__menu:hover {
+    width: 246px;
+    margin: 0 auto;
+    border: 1px solid #192127;
+    box-sizing: border-box;
+    background-color: rgba(80, 61, 88, 0.9);
+}
+.main__menu ul {
+    text-align: center;
+}
+.main__menu li a {
+    height: 45px;
+    line-height: 45px;
+}
+.main__menu li ul {
+    display: none;
+}
+.main__menu li:hover ul {
+    display: block;
+}
