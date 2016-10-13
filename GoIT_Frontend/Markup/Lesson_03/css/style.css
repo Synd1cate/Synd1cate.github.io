@@ -15,7 +15,9 @@ body {
   -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
   -moz-box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
-  box-sizing: border-box;
+  -moz-box-sizing: border-box; /*Firefox 1+*/
+	-webkit-box-sizing: border-box; /*Safari 3+, Chrome 1+*/
+	box-sizing: border-box; /*Opera 7+, IE8+*/
 }
 .logo {
   font-size: 0;
@@ -137,7 +139,9 @@ body {
   text-align: center;
   margin-bottom: 40px;
   border: 1px solid #c8c8c8;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box; /*Firefox 1+*/
+  -webkit-box-sizing: border-box; /*Safari 3+, Chrome 1+*/
+  box-sizing: border-box; /*Opera 7+, IE8+*/
 }
 .productImage img {
   vertical-align: middle;
