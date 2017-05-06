@@ -1,0 +1,212 @@
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+body {
+  background-image: url(../img/background.png);
+  font-family: Tahoma, Arial, sans-serif;
+}
+.wrapper {
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
+}
+.header {
+  height: 175px;
+  width: 1000px;
+  padding: 11px 28px 9px;
+  box-sizing: border-box;
+}
+.header p {
+  color: #128aa7;
+}
+.logo {
+  display: block;
+  float: left;
+  position: relative;
+  font-size: 0;
+}
+.logo p {
+  position: absolute;
+  left: 72px;
+  top: 100px;
+  font-size: 12px;
+}
+.feedback {
+  float: right;
+  font-size: 12px;
+  margin-left: 500px;
+}
+.feedback p {
+  padding-bottom: 5px;
+}
+.contacts {
+  font-weight: bold;
+}
+.countries {
+  float: right;
+  font-size: 0;
+  margin-top: 30px;
+}
+.countries li {
+  display: inline-block;
+  text-align: center;
+  width: 56px;
+}
+.countries p {
+  font-size: 10px;
+}
+
+/*Основной баннер*/
+.mainBanner {
+  width: 1000px;
+  font-size: 0;
+}
+.mainBanner img {
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #138aa7;
+}
+/*-END-*//*Основной баннер*/
+
+/*Меню навигации*/
+.main_menu {
+  position: relative; /* Чтоб тень от меню перекрывала блоки инфо и ньюз */
+  z-index: 1; /* Чтоб тень от меню перекрывала блоки инфо и ньюз */
+  width: 1000px; /* Ширина меню 100% от размера родительского блока */
+  border-top: 1px solid #cacbcb;    /*Верхняя рамка меню*/
+  border-bottom: 1px solid black;   /*Нижняя рамка меню*/
+  padding: 0 53px 0 57px; /* Отступы для пиксельной точности */
+  box-sizing: border-box;
+  line-height: 0;
+  font-size: 0;
+  text-align: justify; /* Для выравнивания пунктов меню по ширине */
+
+/* Градиент для меню */
+background: #424c43;
+background: -webkit-gradient(top, #424c43 0%,#303030 100%);
+background: -o-linear-gradient(top, #424c43 0%, #303030 100%);
+background: -ms-linear-gradient(top, #424c43 0%, #303030 100%);
+background: -moz-linear-gradient(top, #424c43 0%, #303030 100%);
+background: -webkit-linear-gradient(top, #424c43 0%,#303030 100%);
+background: linear-gradient(to bottom, #424c43 0%,#303030 100%);
+/* -End- Градиент для меню */
+/* Тень для меню */
+-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
+-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
+-o-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
+/* -End- Тень для меню */
+}
+/* Для выравнивания пунктов меню по ширине */
+.main_menu::after{
+  width: 100%;
+  height: 0;
+  content: '';
+  display: inline-block;
+  visibility: hidden;
+  overflow: hidden;
+}
+/* -End- Для выравнивания пунктов меню по ширине */
+.main_menu li {
+  display: inline-block; /* Выравнивание пунктов меню по горизонтали */
+  position: relative; /* Для позиционирования выпадающего меню при наведении курсора мыши */
+  text-align: left; /* Возвращаем выравнивание содержимого блоков в прежнее состояние*/
+}
+.main_menu a {
+  display: block; /* чтоб ссылка была кликабельна по высоте строки */
+  text-decoration: none; /* Убираю подчеркивание для ссылок на пунктах меню */
+  color: white; /* Цвет текста ссылок для пунктов меню */
+  font-size: 14px; /* Размер шрифта ссылок для пунктов меню */
+  line-height: 28px; /* Высота строк ссылок для пунктов меню */
+  white-space: nowrap; /* Весь текст отображается одной строкой */
+  padding: 0 10px; /* Отступы от текста ссылок для пунктов меню */
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75); /* Тень текста ссылок для пунктов меню */
+}
+.sub_menu a {
+  padding-right: 45px; /* Изменение внутреннего отступа для ссылок выпадающего списка */
+}
+.sub_menu {
+  /*display: none;  Сокрытие выпадающего меню */
+  position: absolute; /* Позиционирование выпадающего меню */
+  top: 100%; /* Положение выпадающего меню от верхнего края родителя */
+  left: -9999px; /* Скрываем выпадающее меню в левый край от родителя */
+  padding-top: 1px; /* Небольшой отступ для отображения бордера родителя */
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 3px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0 3px 5px 1px rgba(0,0,0,0.75);
+}
+.main_menu li:hover ul {
+  display: block; /* Отображение выпадающего меню */
+  left: 0; /* Возвращаем выпадающий список в исходное состояние */
+}
+.sub_menu li {
+  display: block; /* Выравнивание пунктов меню выпадающего списка по вертикали */
+  background-color: #303030; /* Цвет фона выпадающего меню */
+}
+/* Добавление треугольника в конец ссылки пунктов меню */
+.main_menu ul+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 0;
+  height: 6px;
+  width: 5px;
+  background: url(../img/triangle.png) 0 0 no-repeat;
+}
+/* -End- Добавление треугольника в конец ссылки пунктов меню */
+
+.content {
+  width: 1000px;
+  overflow: hidden;
+}
+.info_block {
+  float: left;
+  background-color: #edeef0;
+  color: #424c43;
+  width: 210px;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  padding: 0 15px 20000px 15px;
+  margin-bottom: -20000px;
+  box-sizing: border-box;
+}
+.news_block {
+  float: right;
+  background-color: #edeef0;
+  color: #424c43;
+  width: 210px;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  padding: 0 15px 20000px 15px;
+  margin-bottom: -20000px;
+  box-sizing: border-box;
+}
+.center_block {
+  width: 580px;
+  margin: 0 auto;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+.block_title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.block_info{
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 31px;
+}
