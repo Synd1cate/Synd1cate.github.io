@@ -204,9 +204,10 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
   font-size: 14px;
   line-height: 24px;
 }
-.footer {
+.footer span{
+  display: block;
   text-align: center;
   color: white;
   font-size: 12px;
-  line-height: 31px;
+  margin: 11px 0;
 }
