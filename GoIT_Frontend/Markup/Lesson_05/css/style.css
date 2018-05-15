@@ -1,0 +1,248 @@
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaneue-thin-webfont.eot');
+  src:
+    url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url('../img/bg.jpg') no-repeat;
+  font-family: 'Helvetica Neue', Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  background-size: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #074f8f;
+  background-image: url('../img/noice.png');
+  color: white;
+  padding: 0 20px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.login {
+  float: right;
+  padding: 0 13px;
+  border: 1px solid #4299d2;
+  border-top: none;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  height: 36px;
+  box-sizing: border-box;
+  background: #51b1dc; /* Old browsers */
+  background: -moz-linear-gradient(top, #51b1dc 0%, #2e7ac4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #51b1dc 0%, #2e7ac4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #51b1dc 0%, #2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#51b1dc', endColorstr='#2e7ac4', GradientType=0); /* IE6-9 */
+}
+
+.login a {
+  text-decoration: underline;
+}
+
+.offer {
+  float: right;
+  padding: 0 17px;
+
+  /*
+  для позиционирования картинки(флажка) перед текстом 2й вариант
+  position: relative;
+  */
+}
+
+.offer a {
+  padding-left: 32px;
+  background: url(../img/flag.png) center left no-repeat;
+  display: inline-block;
+}
+
+/* 2й вариант вставки картинки (флажка) перед/после текста.
+.ofertas a::before {
+  position: absolute;
+  content: "";
+  background: url(../img/flag.png);
+  width: 25px;
+  height: 27px;
+  top: 6px;
+  left: 15px;
+} */
+
+.separator { /* Сепаратор/Разделитель */
+  float: right;
+  height: 31px; /* Высота родительского блока с вычетом марджинов */
+  margin: 2px 0 3px; /* отступы рамки/бордера снизу и сверху */
+  border-left: 1px solid #56a2dc; /* Сам сепоратор в виде бордера */
+}
+
+.navMenu {
+  float: right;
+  font-size: 0;
+}
+
+.navMenu ul {
+  padding: 0 7px;
+}
+
+.navMenu li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.navMenu li a {
+  color: #60b5ed;
+  padding: 0 13px;
+  display: block;
+}
+
+.login a:hover {
+  text-decoration: none;
+}
+
+.offer a:hover {
+  text-decoration: underline;
+}
+
+.navMenu .active,
+.navMenu a:hover {
+  background-color: #4eabda;
+  color: white;
+}
+
+.form {
+  width: 560px;
+  margin: 213px auto 202px;
+}
+
+.headerRegForm {
+  height: 62px;
+  line-height: 62px;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+}
+
+.bodyRegForm {
+  text-align: center;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.63);
+  padding: 36px 0 20px;
+}
+
+.facebook {
+  height: 35px;
+  width: 276px;
+  background: url('../img/fb-login-btn.png') no-repeat;
+  border: none;
+}
+
+.titleSep {
+  overflow: hidden;
+  width: 276px;
+  margin: 33px auto 31px;
+}
+
+.titleSep h3 {
+  position: relative;
+  text-transform: uppercase;
+  color: #999;
+  padding: 0 6px;
+  font-size: 14px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+h3::before,
+h3::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: #000;
+  border-top: 1px solid #666;
+  top: 40%;
+}
+
+h3::before {
+  left: -9999px;
+  right: 100%;
+}
+
+h3::after {
+  left: 100%;
+  right: -9999px;
+}
+
+.formWrap {
+  width: 276px;
+  margin: 0 auto;
+}
+
+.newsletter {
+  font-size: 14px;
+  color: #ccc;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.formReg input[type="text"],
+.formReg input[type="password"],
+.formReg input[type="email"] {
+  width: 276px;
+  height: 36px;
+  padding-left: 19px;
+  margin-bottom: 15px;
+  color: #fffbfb;
+  background: #000;
+  border: none;
+  border-bottom: 1px solid #484948;
+  box-sizing: border-box;
+}
+
+.formReg input[type="text"]:focus,
+.formReg input[type="password"]:focus,
+.formReg input[type="email"]:focus {
+  background: #1b5288;
+  border-bottom: 1px solid #689bcc;
+  -webkit-box-shadow: 0 0 6px 0 rgba(104, 156, 204, 1);
+  -moz-box-shadow: 0 0 6px 0 rgba(104, 156, 204, 1);
+  box-shadow: 0 0 6px 0 rgba(104, 156, 204, 1);
+}
+
+.createAccountButton {
+  width: 151px;
+  height: 36px;
+  background: #50aedb; /* Old browsers */
+  background: -moz-linear-gradient(top, #50aedb 0%, #2e7ac4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #50aedb 0%, #2e7ac4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #50aedb 0%, #2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#50aedb', endColorstr='#2e7ac4', GradientType=0); /* IE6-9 */
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.agreement {
+  font-size: 11px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
